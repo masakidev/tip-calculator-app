@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <title>Tip calculator app</title>
+</head>
+<body class="bg-lightgrayishcyan font-spacemono">
+  <div>
+    <h1 class="py-9 flex justify-center text-2xl uppercase font-bold tracking-personalized text-verydarkcyan leading-9">
+      Spli<br>
+      tter
+    </h1>
+    <div class="bg-white p-8 rounded-tl-3xl rounded-tr-3xl">
+      <label class="font-bold text-darkgrayishcyan" for="">
+        Bill
+      </label><br>
+      <input class="mt-1 mb-8 py-3 px-4 bg-lightgrayishcyan2 w-full rounded outline-none relative text-right font-bold text-2xl text-verydarkcyan" id="bill" type="number">
+      <span class="material-icons absolute left-11 mt-5 text-darkgrayishcyan2">
+        attach_money
+      </span>        
+      <h2 class="mb-3 font-bold text-darkgrayishcyan">
+        Select Tip %
+      </h2>
+      <div class="mb-8 grid grid-flow-col grid-cols-2 grid-rows-3 gap-4">
+        <button class="py-3 font-bold text-2xl bg-verydarkcyan text-white rounded hover:bg-strongcyan hover:text-verydarkcyan" id="tip-5">
+          5%
+        </button>
+        <button class="py-3 font-bold text-2xl bg-verydarkcyan text-white rounded hover:bg-strongcyan hover:text-verydarkcyan" id="tip-15">
+          15%
+        </button>
+        <button class="py-3 text-white font-bold text-2xl bg-verydarkcyan rounded hover:bg-strongcyan hover:text-verydarkcyan" id="tip-50">
+          50%
+        </button>
+        <button class="py-3 text-white font-bold text-2xl bg-verydarkcyan rounded hover:bg-strongcyan hover:text-verydarkcyan" id="tip-10">
+          10%
+        </button>
+        <button class="py-3 text-white font-bold text-2xl bg-verydarkcyan rounded hover:bg-strongcyan hover:text-verydarkcyan" id="tip-25">
+          25%
+        </button>
+        <button class="py-3 bg-lightgrayishcyan2 rounded text-2xl font-bold text-darkgrayishcyan" tip="tip-custom">
+          Custom
+        </button>
+      </div>
+      <label class="font-bold text-darkgrayishcyan" for="">
+        Number of People
+      </label><br>
+      <input class="mt-1 mb-8 py-3 px-4 bg-lightgrayishcyan2 w-full rounded outline-none relative text-right font-bold text-2xl text-verydarkcyan" type="number" id="people">
+      <span class="material-icons absolute left-11 mt-5 text-darkgrayishcyan2">
+        person
+      </span>  
+      <div class="px-5 pt-10 pb-6 bg-verydarkcyan rounded-2xl">
+        <div class="flex justify-between mb-5">
+          <div class="">
+            <h2 class="font-bold text-white">Tip Mount</h2>
+            <h3 class="text-darkgrayishcyan2 text-sm font-bold">/ person</h3>
+          </div>
+          <h1 class="text-strongcyan font-bold text-3xl" id="tip-person"></h1>
+        </div>
+        <div class="flex justify-between mb-8">
+          <div class="">
+            <h2 class="font-bold text-white">Total</h2>
+            <h3 class="text-darkgrayishcyan2 text-sm font-bold">/ person</h3>
+          </div>
+          <h1 class="text-strongcyan font-bold text-3xl" id="total-person"></h1>
+        </div>
+        <button class="w-full py-3 bg-strongcyan rounded text-verydarkcyan uppercase font-bold text-xl">Reset</button>
+      </div>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
